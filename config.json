@@ -1,0 +1,23 @@
+{
+    "report_url": "https://www.tiktok.com/aweme/v2/aweme/feedback/?WebIdLastTime=1700668705&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0 (Windows)&channel=tiktok_web&cookie_enabled=true&current_region=VN&device_id=7304316401660937746&device_platform=web_pc&focus_state=true&from_page=user&history_len=2&is_fullscreen=false&is_page_visible=true&lang=en&nickname=Đi tìm Công bằng&object_id=7203523384922145794&os=windows&owner_id=7203523384922145794&priority_region=&reason=91015&referer=&region=VN&report_type=user&screen_height=864&screen_width=1536&secUid=MS4wLjABAAAAsPMhqy5QaTUG6aZgWjbwKsrwIREoJ833VqkxL4kII2pa2rZnI-r8j_mVNneYeHm-&target=7203523384922145794&tz_name=Asia/Ho_Chi_Minh&webcast_language=en",
+    "proxy_scraper": "n",
+    "threads": 200,
+
+    "report_types": {
+        "Violence": "n",
+        "Sexual Abuse": "n",
+        "Animal Abuse": "n",
+        "Criminal Activities": "n",
+        "Hate": "n",
+        "Bullying": "n",
+        "Suicide Or Self-Harm": "n",
+        "Dangerous Content": "n",
+        "Sexual Content": "n",
+        "Porn": "n",
+        "Drugs": "n",
+        "Firearms Or Weapons": "n",
+        "Sharing Personal Info": "n",
+        "Human Exploitation": "n",
+        "Under Age": "n"
+    }
+}

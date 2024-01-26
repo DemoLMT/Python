@@ -1,0 +1,9 @@
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a==b and c:
+    print("Equilateral triangle")
+elif a==b or c:
+    print("Scalene triangle")
+else: print("Isosceles triangle")

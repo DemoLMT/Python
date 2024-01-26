@@ -1,0 +1,54 @@
+"""
+Bài tập 1.1: Xây dựng chương trình có giao diện như sau:
+************************************
+* LẬP TRÌNH PYTHON CƠ BẢN *
+* Ngôn ngữ: PYTHON *
+* Số Tín Chỉ: 3 *
+************************************
+"""
+def hien_thi_menu():
+    print("************************************")
+    print("*     LẬP TRÌNH PYTHON CƠ BẢN      *")
+    print("*     Ngôn ngữ: PYTHON             *")
+    print("*     Số Tín Chỉ: 2                *")
+    print("************************************")
+    print("___________Chương trình X____________")
+    print("*          F1: Nhập                 *")
+    print("*          F2: Nhập thêm            *")
+    print("*          F3: Đọc tệp              *")
+    print("*          F4: Hiển thị             *")
+    print("*          F5: Tìm kiếm theo tên    *")
+    print("*          F6: Hiển thị X           *")
+    print("*          F7: Thống kê             *")
+    print("*          ESC: Thoát               *")
+
+while True:
+    hien_thi_menu()
+    lua_chon = input("Nhập lựa chọn của bạn: ")
+
+    if lua_chon == "F1":
+        print("Bạn đã chọn F1: Nhập")
+        # Thêm mã lệnh xử lý cho lựa chọn này ở đây
+    elif lua_chon == "F2":
+        print("Bạn đã chọn F2: Nhập thêm")
+        # Thêm mã lệnh xử lý cho lựa chọn này ở đây
+    elif lua_chon == "F3":
+        print("Bạn đã chọn F3: Đọc tệp")
+        # Thêm mã lệnh xử lý cho lựa chọn này ở đây
+    elif lua_chon == "F4":
+        print("Bạn đã chọn F4: Hiển thị")
+        # Thêm mã lệnh xử lý cho lựa chọn này ở đây
+    elif lua_chon == "F5":
+        print("Bạn đã chọn F5: Tìm kiếm theo tên")
+        # Thêm mã lệnh xử lý cho lựa chọn này ở đây
+    elif lua_chon == "F6":
+        print("Bạn đã chọn F6: Hiển thị học sinh giỏi")
+        # Thêm mã lệnh xử lý cho lựa chọn này ở đây
+    elif lua_chon == "F7":
+        print("Bạn đã chọn F7: Thống kê")
+        # Thêm mã lệnh xử lý cho lựa chọn này ở đây
+    elif lua_chon == "ESC":
+        print("Bạn đã chọn ESC: Thoát")
+        break
+    else:
+        print("Lựa chọn không hợp lệ. Vui lòng thử lại.")

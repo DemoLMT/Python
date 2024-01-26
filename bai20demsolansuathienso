@@ -1,0 +1,11 @@
+def get_unique_values(lst):
+    c=[]
+    for i in lst:
+        if i not in c:
+            c.append(i)
+    return c
+n = int(input())
+lst = []
+for i in range(n):
+    lst.append(int(input()))
+print(get_unique_values(lst))

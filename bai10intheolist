@@ -1,0 +1,8 @@
+
+n = int(input())
+lst = []
+for i in range(n):
+    lst.append(map(int,input().split()))
+s = 0
+for v in lst:
+   s += v 

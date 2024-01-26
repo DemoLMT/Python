@@ -1,0 +1,103 @@
+"""
+def tinh_so_to(tien):
+    menhgia = [500000,200000,100000]
+    so_to = {}
+    for i in menhgia:
+        so_to[i]= tien//i
+        tien %= i
+    return so_to
+so_tien = int(input("Nhap menh gia:"))
+so_to = tinh_so_to(so_tien)
+# In kết quả
+print(f"Số tờ 500,000 VND: {so_to[500000]} tờ")
+print(f"Số tờ 200,000 VND: {so_to[200000]} tờ")
+print(f"Số tờ 100,000 VND: {so_to[100000]} tờ")
+
+Viết chương trình tính và in ra chu vi, diện tích 
+của hình chữ nhật cho biết trước chiều dài (d) và chiều rộng (r).
+"""
+"""
+d, r = map(int,input().split())
+chu_vi = 2 * (d + r)
+dien_tich = d * r
+print(chu_vi)
+print(dien_tich)
+""""""
+import math
+
+def la_so_chinh_phuong(n):
+    if n < 0:
+        return False
+    
+    can2 = int(math.sqrt(n))
+    return can2 ** 2 == n
+n = int(input())
+if la_so_chinh_phuong(n):
+    print("YES")
+else:
+    print("No")
+""""""
+a, b, c = map(int,input().split())
+max = a
+if (a ==b or max<b) : 
+    print (b)
+else :print(a)
+""""""
+print("Lap Trinh Khong Kho!")
+""""""
+
+""""""
+a, b, c = map(int,input().split())
+print(a+b+c)"""
+"""
+def in_so_nguyen(a, b):
+    for i in range(a, b + 1):
+        print(i, end=" ")
+a, b  = map(int,input().split())
+in_so_nguyen(a, b)
+""""""
+a,b = map(int,input().split())
+if (a==0):
+    if(b!=0):
+        print("NO")
+    else: print("WOW")
+else:
+    print(round(-b/a,2))
+""""""
+def tinh_gia_tri_S(n):
+    S = 0
+
+    for i in range(1, 3 * n + 2):
+        if n % 2 == 0:
+            if i % 2 == 0:
+                S -= i
+            else:
+                S += i
+        else:
+            if i % 2 == 0:
+                S += i
+            else:
+                S -= i
+
+    return S
+n = int(input())
+ket_qua = tinh_gia_tri_S(n)
+print(ket_qua)"""
+"""
+import math
+def kiemtra(n):
+    if n < 2:
+        return "NO"
+    elif n ==2 or n ==3:
+        return "YES"
+    for i in range (2, int(math.sqrt(n+1))):
+        if(n%i == 0):
+            return "NO"
+    return "YES"
+
+           
+n=int(input())
+print(kiemtra(n))"""
+n= int(input())
+lst = list(map(int, input().split()))
+print(max(lst))

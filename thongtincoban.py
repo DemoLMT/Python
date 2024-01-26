@@ -1,0 +1,23 @@
+# Chương trình hỏi thông tin từ người dùng
+print("Chào bạn! Hãy cho tôi biết một chút thông tin về bạn.")
+ten = input("Tên của bạn: ")
+tuoi = input("Tuổi của bạn: ")
+gioi_tinh = input("Giới tính của bạn: ")
+so_dien_thoai = input("Số điện thoại của bạn: ")
+email = input("Email của bạn: ")
+dia_chi = input("Địa chỉ của bạn: ")
+nghe_nghiep = input("Nghề nghiệp của bạn: ")
+so_thich = input("Sở thích của bạn: ")
+so_truong = input("Sở trường của bạn: ")
+
+# Hiển thị thông tin đã nhập
+print("\nThông tin của bạn:")
+print("Tên: " + ten)
+print("Tuổi: " + tuoi)
+print("Giới tính: " + gioi_tinh)
+print("Số điện thoại: " + so_dien_thoai)
+print("Email: " + email)
+print("Địa chỉ: " + dia_chi)
+print("Nghề nghiệp: " + nghe_nghiep)
+print("Sở thích: " + so_thich)
+print("Sở trường: " + so_truong)

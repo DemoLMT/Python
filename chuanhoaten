@@ -1,0 +1,10 @@
+def chuan_hoa_ten(ten):
+    return ten.title()
+T = int(input())
+danh_sach = []
+for i in range(T):
+    ten = input()
+    danh_sach.append(chuan_hoa_ten(ten))
+print()
+for ten in danh_sach:
+    print(ten)

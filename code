@@ -1,0 +1,48 @@
+import cv2
+import dlib
+
+# Khởi tạo detector khuôn mặt của dlib
+detector = dlib.get_frontal_face_detector()
+
+# Khởi tạo bộ phát hiện landmark (điểm đặc trưng khuôn mặt) của dlib
+predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+
+# Hàm để nhận dạng khuôn mặt trong hình ảnh
+def recognize_faces(image):
+    # Chuyển ảnh thành ảnh xám
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    # Sử dụng detector để tìm khuôn mặt trong ảnh
+    faces = detector(gray)
+
+    # Duyệt qua các khuôn mặt tìm thấy
+    for face in faces:
+        landmarks = predictor(image, face)
+
+        # Vẽ hình chữ nhật xung quanh khuôn mặt
+        x, y, w, h = face.left(), face.top(), face.width(), face.height()
+        cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+
+        # Vẽ các điểm đặc trưng trên khuôn mặt
+        for i in range(68):
+            x, y = landmarks.part(i).x, landmarks.part(i).y
+            cv2.circle(image, (x, y), 2, (0, 0, 255), -1)
+
+    return image
+
+# Chạy ứng dụng
+cap = cv2.VideoCapture(0)  # Sử dụng camera mặc định (0) hoặc nhập tên tệp video
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    # Nhận diện khuôn mặt trong hình ảnh và hiển thị
+    frame = recognize_faces(frame)
+    cv2.imshow("Face Recognition", frame)
+
+    if cv2.waitKey(1) & 0xFF == 27:  # Ấn Esc để thoát
+        break
+
+cap.release()
+cv2.destroyAllWindows()

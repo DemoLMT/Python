@@ -1,0 +1,11 @@
+def max3(a, b, c):
+    max =a
+    if b>a and b>c: max=b
+    elif c>b and c>a: max= c 
+    return max
+
+
+a = int(input())
+b = int(input())
+c = int(input())
+print(max3(a, b, c))

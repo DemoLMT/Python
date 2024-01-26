@@ -1,0 +1,9 @@
+str = str(input())
+def ktkt(str):
+    list = str.split(" ")
+    c=[]
+    for i in list:
+        if len(i)>3: 
+            c.append(i)
+    return c
+print(ktkt(str))

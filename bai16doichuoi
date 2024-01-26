@@ -1,0 +1,4 @@
+s = str(input())
+list = s.split(" ")
+list.reverse()
+print(" ".join(list))

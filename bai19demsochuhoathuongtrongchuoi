@@ -1,0 +1,13 @@
+def show(s):
+    demhoa =0
+    demthuong=0
+    for i in s:
+        if i.isupper():
+            demhoa+=1
+        if i.islower():
+            demthuong+=1
+    print("Given string:", s)
+    print("Number of uppercase letters:", demhoa)
+    print("Number of lowercase letters:", demthuong)
+s = str(input())
+show(s)

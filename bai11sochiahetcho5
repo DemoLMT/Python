@@ -1,0 +1,11 @@
+n = int(input())
+lst = []
+for i in range(n):
+    lst.append(int(input()))
+c = []
+for k in lst:
+    if k%5==0:
+            c.append(k)
+if len(c)==0 :
+        c=[0]
+print(c)
